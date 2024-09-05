@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+    
+    <a href="#" id="dashboard" class="active">Dashboard</a>
+    <a href="#" id="blogs">Blogs</a>
+    <a href="#" id="calendar">Calendar</a>
+    <a href="#" id="events">Events</a>
+    <a href="#" id="contact">Contact Us</a>
+</div>
+
+<!-- Button to open the sidebar -->
+<button class="open-btn" onclick="openSidebar()">☰</button>
+<div class="content">
+    <div class="time-tracker">
+        <div class="header">
+            <span class="icon">⏰</span>
+            <span>Track Time</span>
+        </div>
+        <div class="timer" id="timer">00:00</div>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <div class="buttons">
+            <button id="startButton" onclick="startTimer()">Start</button>
+            <button id="pauseButton" onclick="pauseTimer()">Pause</button>
+        </div>
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
