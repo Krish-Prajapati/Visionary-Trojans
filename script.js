@@ -47,7 +47,32 @@ function updateTimer() {
     document.getElementById('timer').innerText =
         (minutes < 10 ? '0' : '') + minutes + ':' + (displaySeconds < 10 ? '0' : '') + displaySeconds;
 
-    // Update the progress bar (this is just a basic simulation)
-    const progressBar = document.getElementById('progressBar');
-    progressBar.value = (seconds % 100); // Loops progress bar after 100 seconds
+    // // Update the progress bar (this is just a basic simulation)
+    // const progressBar = document.getElementById('progressBar');
+    // progressBar.value = (seconds % 100); // Loops progress bar after 100 seconds
 }
+// const tasks = ["Task 1", "Task 2", "Task 3"]; // Example tasks array
+//     const taskList = document.getElementById('task-list');
+//     const noTasksMessage = document.getElementById('no-tasks');
+
+//     function displayTasks() {
+//         taskList.innerHTML = ''; // Clear existing tasks
+//         if (tasks.length === 0) {
+//             noTasksMessage.style.display = 'block'; // Show the 'well done' message
+//         } else {
+//             noTasksMessage.style.display = 'none'; // Hide the 'well done' message
+//             tasks.forEach((task, index) => {
+//                 const taskElement = document.createElement('div');
+//                 taskElement.className = 'task';
+//                 taskElement.innerText = task;
+//                 taskList.appendChild(taskElement);
+//             });
+//         }
+//     }
+
+//     document.getElementById('pull-button').addEventListener('click', function() {
+//         tasks.pop(); // Simulate task completion
+//         displayTasks();
+//     });
+
+//     displayTasks(); // Initial display of tasks
